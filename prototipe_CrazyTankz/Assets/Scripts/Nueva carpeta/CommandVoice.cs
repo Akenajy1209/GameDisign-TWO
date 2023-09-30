@@ -7,6 +7,7 @@ using System.Linq;
 
 public class CommandVoice : MonoBehaviour
 {
+    private PositionBehavier AvailablePOS;
     // Start is called before the first frame update
     KeywordRecognizer keywordRecognizer; // creo mi reconocedor de comandode voz
 
@@ -14,6 +15,8 @@ public class CommandVoice : MonoBehaviour
 
     void Start()
     {
+        AvailablePOS = GameObject.FindWithTag("Player").GetComponent<PositionBehavier>();
+
         //creo las acciones segun el comando de voz
         actions.Add("uno",MoverUno);
         actions.Add("dos",MoverDos);
@@ -35,38 +38,80 @@ public class CommandVoice : MonoBehaviour
 
     private void MoverUno()
     {
-        Debug.Log("Se mueve a la pos: 1");
-        //WindowsVoice.speak("uno");
+        if (AvailablePOS.pos1 == true)
+        {
+            Debug.Log("Se mueve a la pos: 1");
+            WindowsVoice.speak("uno");
+            transform.position = new Vector3(0f, 1f, 0f);
+        }else {
+            WindowsVoice.speak("No disponible");
+        }
     }
     private void MoverDos()
     {
-        Debug.Log("Se mueve a la pos: 2");
-        //WindowsVoice.speak("dos");
+        if (AvailablePOS.pos2 == true)
+        {
+            Debug.Log("Se mueve a la pos: 2");
+            WindowsVoice.speak("dos");
+            transform.position = new Vector3(-2.5f, 1f, 0f);
+        }else{
+            WindowsVoice.speak("No disponible");
+        }
     }
     private void MoverTres()
     {
-        Debug.Log("Se mueve a la pos: 3");
-        //WindowsVoice.speak("tres");
+        if (AvailablePOS.pos3 == true)
+        {
+            Debug.Log("Se mueve a la pos: 3");
+            WindowsVoice.speak("tres");
+            transform.position = new Vector3(2.5f, 1f, 0f);
+        }else{
+            WindowsVoice.speak("No disponible");
+        }
     }
     private void MoverCuatro()
     {
-        Debug.Log("Se mueve a la pos: 4");
-        //WindowsVoice.speak("cuatro");
+        if (AvailablePOS.pos4 == true)
+        {
+            Debug.Log("Se mueve a la pos: 4");
+            WindowsVoice.speak("cuatro");
+            transform.position = new Vector3(-5f, 1f, 0f);
+        }else{
+            WindowsVoice.speak("No disponible");
+        }
     }
     private void MoverCinco()
     {
-        Debug.Log("Se mueve a la pos: 5");
-        //WindowsVoice.speak("cinco");
+        if (AvailablePOS.pos5 == true)
+        {
+            Debug.Log("Se mueve a la pos: 5");
+            WindowsVoice.speak("cinco");
+            transform.position = new Vector3(5f, 1f, 0f);
+        }else{
+            WindowsVoice.speak("No disponible");
+        }
     }
     private void MoverSeis()
     {
-        Debug.Log("Se mueve a la pos: 6");
-        //WindowsVoice.speak("seis");
+        if (AvailablePOS.pos6 == true)
+        {
+            Debug.Log("Se mueve a la pos: 6");
+            WindowsVoice.speak("seis");
+            transform.position = new Vector3(-7.5f, 1f, 0f);
+        }else{
+            WindowsVoice.speak("No disponible");
+        }
     }
     private void MoverSiete()
     {
-        Debug.Log("Se mueve a la pos: 7");
-        //WindowsVoice.speak("siete");
+        if (AvailablePOS.pos7 == true)
+        {
+            Debug.Log("Se mueve a la pos: 7");
+            WindowsVoice.speak("siete");
+            transform.position = new Vector3(7.5f, 1f, 0f);
+        }else{
+            WindowsVoice.speak("No disponible");
+        }
     }
 
 

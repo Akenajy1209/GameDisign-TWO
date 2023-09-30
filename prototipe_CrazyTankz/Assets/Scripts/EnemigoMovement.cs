@@ -73,7 +73,7 @@ public class EnemigoMovement : MonoBehaviour
         if (other.CompareTag("Daño"))
         {
             DatosPlayer.ReproducirEnemigo();
-            DatosPlayer.EnemiActual -= 1;
+            //DatosPlayer.EnemiActual -= 1;
             Destroy(gameObject);
         }
     }
