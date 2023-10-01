@@ -565,6 +565,7 @@ GameObject:
   - component: {fileID: 1110623513}
   - component: {fileID: 1110623514}
   - component: {fileID: 1110623515}
+  - component: {fileID: 1110623516}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -643,7 +644,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110623506}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 1, z: 0}
+  m_LocalPosition: {x: -5, y: 1, z: -0.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -674,7 +675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84ed134d6052e1141b72978556230d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMax: 0
+  vidaMax: 100
   vidaActual: 0
   ImagenBarraVida: {fileID: 1949495125}
   "sonidoDa\xF1o": {fileID: 0}
@@ -712,6 +713,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848df7d82d11d3b43b9f3c53e2a6a991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1110623516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110623506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c272e51668fce9c44a430fb70e4082cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TiempoMax: 10
+  TiempoActual: 0
+  ImagenBarraTiempo: {fileID: 1809484986}
 --- !u!1 &1193240919
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,10 +961,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 281e5af03f4969240bc1346ebf8342fb, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -1021,13 +1037,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 281e5af03f4969240bc1346ebf8342fb, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1949495126

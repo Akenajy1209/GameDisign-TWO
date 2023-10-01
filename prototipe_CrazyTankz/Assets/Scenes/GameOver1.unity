@@ -252,7 +252,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.80000305, y: -16}
+  m_AnchoredPosition: {x: 10.5, y: -16}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924030178
@@ -277,8 +277,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: salir
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6aa4a8341ef61d7419cfd0626fadf739, type: 2}
-  m_sharedMaterial: {fileID: 7088943812513363847, guid: 6aa4a8341ef61d7419cfd0626fadf739, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 45df1af51eac4bf4cb52e78d69b49040, type: 2}
+  m_sharedMaterial: {fileID: 4015117828838484931, guid: 45df1af51eac4bf4cb52e78d69b49040, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -410,10 +410,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: reintentar
+  m_text: REINTENTAR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6aa4a8341ef61d7419cfd0626fadf739, type: 2}
-  m_sharedMaterial: {fileID: 7088943812513363847, guid: 6aa4a8341ef61d7419cfd0626fadf739, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 45df1af51eac4bf4cb52e78d69b49040, type: 2}
+  m_sharedMaterial: {fileID: 4015117828838484931, guid: 45df1af51eac4bf4cb52e78d69b49040, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -437,8 +437,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -840,7 +840,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ac01169481d7de044a0a93daba304a62, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 01687ad8acc2dcc45881e127023358dd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -963,7 +963,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.7, y: -70}
+  m_AnchoredPosition: {x: 0.7, y: -29}
   m_SizeDelta: {x: 193.834, y: 56.862}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1841909660
@@ -1097,8 +1097,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.7, y: -10}
-  m_SizeDelta: {x: 193.834, y: 56.862}
+  m_AnchoredPosition: {x: 0.7, y: 31}
+  m_SizeDelta: {x: 300, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1976489910
 MonoBehaviour:
@@ -1234,7 +1234,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987724641}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: b40e2ae884147e14bb17248fc89f2bcd, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 991cf04925a49d645bfeae757c366da5, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1815780298}
