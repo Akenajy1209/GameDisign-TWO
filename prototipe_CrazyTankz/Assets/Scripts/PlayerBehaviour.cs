@@ -33,11 +33,11 @@ public class PlayerBehaviour : MonoBehaviour
             if(Datos.Level == 1)
             {
                 Debug.Log("Perdio");
-               // SceneManager.LoadScene(5);
+               SceneManager.LoadScene(3);
             }
             if (Datos.Level == 2)
             {
-              //  SceneManager.LoadScene(6);
+              //  SceneManager.LoadScene(4);
             }
         }
     }
