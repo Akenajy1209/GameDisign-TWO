@@ -18,10 +18,6 @@ public class BalaMov : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (other.CompareTag("Enemigo"))
-        {
-            Destroy(gameObject);
-        }
         if (other.CompareTag("Player"))
         {
             Destroy(gameObject);

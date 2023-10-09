@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TimeController : MonoBehaviour
@@ -25,6 +26,7 @@ public class TimeController : MonoBehaviour
         {
             Debug.Log("Tiempo Agotado");
             TiempoActual = 0.0f;
+            SceneManager.LoadScene(5);
         }
     }
     void RevisarTiempo()

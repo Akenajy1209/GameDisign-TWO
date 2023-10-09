@@ -29,7 +29,7 @@ public class MenuInicial : MonoBehaviour
     }
     public void Gamewin()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(6);
     }
     
 }

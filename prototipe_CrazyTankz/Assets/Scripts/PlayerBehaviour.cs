@@ -12,9 +12,8 @@ public class PlayerBehaviour : MonoBehaviour
     private TimeController DatosTiempo; 
 
     //Sonido
-    public AudioClip sonidoDaño;
+    public AudioClip sonidoDano;
     public AudioClip sonidoMuerte;
-    public AudioClip DañoEnemigo;
     private AudioSource audio;
 
 
@@ -28,24 +27,24 @@ public class PlayerBehaviour : MonoBehaviour
     void Update()
     {
         RevisarVida();
-        if (vidaActual <= 0 || DatosTiempo.TiempoActual == 0f)
+        if (vidaActual <= 0 /*|| DatosTiempo.TiempoActual == 0*/)
         {
             if(Datos.Level == 1)
             {
                 Debug.Log("Perdio");
-               SceneManager.LoadScene(3);
+               SceneManager.LoadScene(4);
             }
             if (Datos.Level == 2)
             {
-              //  SceneManager.LoadScene(4);
+                SceneManager.LoadScene(5);
             }
         }
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Daño"))
+        if (other.CompareTag("Dano"))
         {
-            ReproducirSonido(sonidoDaño);
+            ReproducirSonido(sonidoDano);
             audio.Play();
             vidaActual -= 25;
             if (vidaActual <= 0)
@@ -60,8 +59,8 @@ public class PlayerBehaviour : MonoBehaviour
     }
     public void ReproducirSonido(AudioClip clip)
     {
-        audio.clip = clip;
-        audio.Play();
+        GetComponent<AudioSource>().clip = clip;
+        GetComponent<AudioSource>().Play();
     }
 }
 

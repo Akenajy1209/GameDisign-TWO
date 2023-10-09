@@ -8,14 +8,17 @@ using System.Linq;
 public class CommandVoice : MonoBehaviour
 {
     private PositionBehavier AvailablePOS;
+    private PlayerBehaviour CompPlayer;
     // Start is called before the first frame update
     KeywordRecognizer keywordRecognizer; // creo mi reconocedor de comandode voz
 
     Dictionary<string, Action> actions = new Dictionary<string, Action>(); // creo las comando
 
+    public AudioClip sonidoDezplazamiento;
     void Start()
     {
         AvailablePOS = GameObject.FindWithTag("Player").GetComponent<PositionBehavier>();
+        CompPlayer = GameObject.FindWithTag("Player").GetComponent<PlayerBehaviour>();
 
         //creo las acciones segun el comando de voz
         actions.Add("uno",MoverUno);
@@ -33,7 +36,7 @@ public class CommandVoice : MonoBehaviour
         keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
         keywordRecognizer.Start();
 
-       // WindowsVoice.speak("Hola a los alumnos y alumnas de diseño de videojuegos 2");
+        // WindowsVoice.speak("Hola a los alumnos y alumnas de diseño de videojuegos 2");
     }
 
     private void MoverUno()
@@ -42,7 +45,9 @@ public class CommandVoice : MonoBehaviour
         {
             Debug.Log("Se mueve a la pos: 1");
             WindowsVoice.speak("uno");
+            CompPlayer.ReproducirSonido(sonidoDezplazamiento);
             transform.position = new Vector3(0f, 1f, 0f);
+
         }else {
             WindowsVoice.speak("No disponible");
         }
@@ -53,6 +58,7 @@ public class CommandVoice : MonoBehaviour
         {
             Debug.Log("Se mueve a la pos: 2");
             WindowsVoice.speak("dos");
+            CompPlayer.ReproducirSonido(sonidoDezplazamiento);
             transform.position = new Vector3(-2.5f, 1f, 0f);
         }else{
             WindowsVoice.speak("No disponible");
@@ -64,8 +70,10 @@ public class CommandVoice : MonoBehaviour
         {
             Debug.Log("Se mueve a la pos: 3");
             WindowsVoice.speak("tres");
+            CompPlayer.ReproducirSonido(sonidoDezplazamiento);
             transform.position = new Vector3(2.5f, 1f, 0f);
-        }else{
+        }
+        else{
             WindowsVoice.speak("No disponible");
         }
     }
@@ -75,6 +83,7 @@ public class CommandVoice : MonoBehaviour
         {
             Debug.Log("Se mueve a la pos: 4");
             WindowsVoice.speak("cuatro");
+            CompPlayer.ReproducirSonido(sonidoDezplazamiento);
             transform.position = new Vector3(-5f, 1f, 0f);
         }else{
             WindowsVoice.speak("No disponible");
@@ -86,6 +95,7 @@ public class CommandVoice : MonoBehaviour
         {
             Debug.Log("Se mueve a la pos: 5");
             WindowsVoice.speak("cinco");
+            CompPlayer.ReproducirSonido(sonidoDezplazamiento);
             transform.position = new Vector3(5f, 1f, 0f);
         }else{
             WindowsVoice.speak("No disponible");
@@ -97,6 +107,7 @@ public class CommandVoice : MonoBehaviour
         {
             Debug.Log("Se mueve a la pos: 6");
             WindowsVoice.speak("seis");
+            CompPlayer.ReproducirSonido(sonidoDezplazamiento);
             transform.position = new Vector3(-7.5f, 1f, 0f);
         }else{
             WindowsVoice.speak("No disponible");
@@ -108,6 +119,7 @@ public class CommandVoice : MonoBehaviour
         {
             Debug.Log("Se mueve a la pos: 7");
             WindowsVoice.speak("siete");
+            CompPlayer.ReproducirSonido(sonidoDezplazamiento);
             transform.position = new Vector3(7.5f, 1f, 0f);
         }else{
             WindowsVoice.speak("No disponible");
