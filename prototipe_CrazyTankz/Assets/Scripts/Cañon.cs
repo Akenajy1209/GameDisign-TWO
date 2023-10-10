@@ -42,7 +42,7 @@ public class Cañon : MonoBehaviour
     public void OnShoot()
     {
         // Instanciar un objeto con la misma orientación
-        Vector3 posicionInstancia = transform.position + transform.forward * 2f; // 2 unidades hacia adelante
+        Vector3 posicionInstancia = new Vector3(transform.position.x, transform.position.y-1, transform.position.z);
         Instantiate(bala, posicionInstancia, transform.rotation);
         //Reproduce sonido de disparo
         audio.Play();

@@ -120,7 +120,7 @@ public class CommandVoice : MonoBehaviour
             Debug.Log("Se mueve a la pos: 7");
             WindowsVoice.speak("siete");
             CompPlayer.ReproducirSonido(sonidoDezplazamiento);
-            transform.position = new Vector3(7.5f, 1f, 0f);
+            transform.position = new Vector3(8f, 1f, 0f);
         }else{
             WindowsVoice.speak("No disponible");
         }

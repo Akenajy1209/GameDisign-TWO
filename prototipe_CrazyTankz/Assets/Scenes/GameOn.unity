@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Los 6 \nSINIESTROS"
+  m_text: 'CRAZY TANK '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 45df1af51eac4bf4cb52e78d69b49040, type: 2}
   m_sharedMaterial: {fileID: 4015117828838484931, guid: 45df1af51eac4bf4cb52e78d69b49040, type: 2}
@@ -1417,7 +1417,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23986
+  m_Name: pb_Mesh25194
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

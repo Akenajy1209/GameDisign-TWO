@@ -26,7 +26,7 @@ public class TimeController : MonoBehaviour
         {
             Debug.Log("Tiempo Agotado");
             TiempoActual = 0.0f;
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(6);
         }
     }
     void RevisarTiempo()
